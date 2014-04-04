@@ -1,0 +1,56 @@
+<HTML>
+    <HEAD>
+        <TITLE>Applet拼图游戏</TITLE>
+        <meta http-equiv="Content" content="text/html" charset="utf-8"></meta>
+        <style>
+            p { width:200px; }
+        </style>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    </HEAD>
+    <BODY>
+
+        <!--
+        *** GENERATED applet HTML launcher - DO NOT EDIT IN 'BUILD' FOLDER ***
+        
+        If you need to modify this HTML launcher file (e.g., to add applet parameters), 
+        copy it to where your applet class is found in the SRC folder. If you do this, 
+        the IDE will use it when you run or debug the applet.
+        
+        Tip: To exclude an HTML launcher from the JAR file, use exclusion filters in 
+        the Packaging page in the Project Properties dialog.
+        
+        For more information see the online help.
+        -->
+
+        <H3><HR WIDTH="100%">JApplet小游戏--拼图<HR WIDTH="100%"></H3>
+
+        <table>
+        <td>
+            <APPLET codebase="classes" code="puzzle/Puzzle.class" width=600 height=360>
+                
+            </APPLET>
+        </td>
+        <td>
+            
+            <button>游戏介绍</button>
+            <br></br>
+        <p>
+            1.按F1重新游戏；<br></br>
+            2.鼠标点击图块或键盘上/下/左/右进行游戏；<br></br>
+            3.共4张背景图，按P键选上一张图片，按N键选下一张图片；<br></br>
+            4.祝你玩得愉快。
+        </p>
+        <script>
+            $("button").click(function () {
+                $("p").slideToggle("slow");
+            });
+        </script>
+    </td>
+</table>
+
+<HR WIDTH="100%">
+<p1 class="copyright_en">Copyright &copy; 2011 Kuloud. All Rights Reserved.</a></p1>
+
+</BODY>
+</HTML>
